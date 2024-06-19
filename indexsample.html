@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bagwan's Burger</title>
+  <link rel="stylesheet" type="text/css" href="stylesample.css">
+  <style>
+    /* Styles for the popup */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <header class="sticky-header">
+    <div class="logo">
+      <img src="images/iconlogo.png" alt="Bagwan's Burger Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="bagwan"><pre>Welcome to 
+Bagwan's Burger</pre></h1>
+      <p>Experience the Taste of Perfection</p>
+      <a href="#menu" class="btn">Explore Our Menu</a>
+    </div>
+  </section>
+
+  <section id="about" class="about dark-theme">
+    <div class="about-content">
+      <h2>About Bagwan's Burger</h2>
+      <p>Experience the finest gourmet burgers in a cozy and rustic atmosphere. At Bagwan's Burger, we are dedicated to delivering exceptional flavors that will tantalize your taste buds.</p>
+      <p>Our chefs meticulously craft each burger using locally sourced ingredients and unique flavor combinations. From juicy beef patties to mouthwatering vegetarian options, there's something for everyone.</p>
+      <a href="#menu" class="btn">Explore Our Menu</a>
+    </div>
+    <div class="about-image">
+      <img src="images/about-image.jpg" alt="About Image">
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="images/burger1.jpg" alt="Burger 1">
+        <h3>Classic Cheeseburger</h3>
+        <p>A juicy beef patty topped with melted cheese, fresh lettuce, tomato, and our special sauce. Served with a side of crispy fries.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/burger2.jpg" alt="Burger 2">
+        <h3>Veggie Delight</h3>
+        <p>A delicious veggie patty made from a blend of fresh vegetables and spices. Topped with avocado, sprouts, and tangy mayo. Served with a side of sweet potato fries.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/burger3.jpg" alt="Burger 3">
+        <h3>Spicy BBQ Burger</h3>
+        <p>A fiery burger packed with flavor! Grilled chicken breast smothered in spicy BBQ sauce, topped with jalapenos, crispy onion rings, and chipotle mayo. Served with a side of coleslaw.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reservations" id="reservations">
+    <div class="reservation-form">
+      <h2>Make a Reservation</h2>
+      <form id="reservationForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+        <textarea name="message" placeholder="Additional Message" rows="5"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div class="popup" id="popup">
+        Your booking has been reserved successfully!
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+      <img src="images/customer1.jpg" alt="Customer 1">
+      <p>"The burgers at Bagwan's Burger are simply amazing! The flavors are rich, and the ingredients are always fresh. It's my go-to place whenever I'm craving a delicious meal."</p>
+      <h4>Salim Bhai</h4>
+    </div>
+    <div class="testimonial">
+      <img src="images/customer2.jpg" alt="Customer 2">
+      <p>"Bagwan's Burger never disappoints! The quality of their burgers and the friendly service make it a top-notch dining experience. I highly recommend it to all burger lovers!"</p>
+      <h4>Jane Smith</h4>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="images/gallery1.jpg" alt="Image 1">
+      </div>
+      <div class="image-item">
+        <img src="images/gallery2.jpg" alt="Image 2">
+      </div>
+      <div class="image-item">
+        <img src="images/gallery3.jpg" alt="Image 3">
+      </div>
+      <div class="image-item">
+        <img src="images/gallery4.jpg" alt="Image 4">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>123 Main Street, Solapur, India</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone-alt"></i>
+          <p>+1 234 567 .</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <p>info@bagwansburger.com</p>
+        </div>
+      </div>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="images/iconlogo.png" alt="Logo">
+      </div>
+      <nav class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#reservations">Reservations</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <p class="footer-text">&copy; 2023 Bagwan's Burger. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const links = document.querySelectorAll('a[href^="#"]');
+      for (const link of links) {
+        link.addEventListener("click", function(event) {
+          event.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+          targetElement.scrollIntoView({
+            behavior: "smooth"
+          });
+        });
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const form = document.getElementById("reservationForm");
+      const popup = document.getElementById("popup");
+
+      form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Simulate form submission logic (you can replace this with actual submission logic)
+        setTimeout(function() {
+          // Display popup message
+          popup.style.display = "block";
+
+          // Reset form fields (optional)
+          form.reset();
+
+          // Hide popup after 3 seconds (3000 milliseconds)
+          setTimeout(function() {
+            popup.style.display = "none";
+          }, 3000);
+        }, 1000); // Simulating a delay of 1 second (1000 milliseconds) for demonstration purposes
+      });
+    });
+  </script>
+</
